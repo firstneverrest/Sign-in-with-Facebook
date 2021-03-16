@@ -5,7 +5,7 @@
 }
 
 :root {
-
+    --red: #FF5050;
 }
 
 html {
@@ -37,9 +37,42 @@ body{
     margin-bottom: 2rem;
 }
 
-.signin-button {
-    /* font-size: 10rem;
-    position: absolute;
-    top: 50%;
-    left: 50%; */
+#profile {
+    margin-top: 2rem;
+    padding: 3rem 5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#profile__image {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 15rem;
+    height: 15rem;
+}
+
+#profile__name {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+#profile__email {
+    font-size: 1.6rem;
+    margin-top: .5rem;;
+}
+
+#signout-button {
+    font-family: inherit;
+    color: var(--red);
+    padding: 1rem;
+    margin-top: 2rem;
+    outline: none;
+    border: 1px solid var(--red);
+    background-color: #fff;
+    cursor: pointer;
+
+    transition: all .2s;
+}
+
+#signout-button:hover {
+    color: #fff;
+    background-color: var(--red);
 }
