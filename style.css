@@ -45,8 +45,8 @@ body{
 
 #profile__image {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 15rem;
-    height: 15rem;
+    width: 8rem;
+    height: 8rem;
 }
 
 #profile__name {

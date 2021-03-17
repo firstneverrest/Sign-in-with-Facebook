@@ -16,25 +16,26 @@
         </header>
 
         <!-- The JS SDK Login Button -->
-        <!-- <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div> -->
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-        </fb:login-button>
 
-        <div id="status">
-        </div>
+        <!-- this is original login button -->
+        <!-- <fb:login-button scope="public_profile,email" onlogin="GetProfile();">
+        </fb:login-button> -->
+
+        <!-- This is style login button -->
+        <div class="fb-login-button" scope="public_profile,email" onlogin="GetProfile();" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
 
         <div id="profile">
           <img id="profile__image" src="./placeholder.jpg" alt="user image">
           <h3 id="profile__name">Name</h3>
           <p id="profile__email">E-mail</p>
-          <button id="signout-button" onclick="logout()" >Log out</button>
+          <button id="signout-button" onclick="logout()">Log out</button>
         </div>
         
     </div>    
     
  <!-- Load the JS SDK asynchronously -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=178096127280582&autoLogAppEvents=1" nonce="c8W2wmWC"></script> -->
+    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=178096127280582&autoLogAppEvents=1" nonce="c8W2wmWC"></script>
     <script src="script.js"></script>
 </body>
 </html>
