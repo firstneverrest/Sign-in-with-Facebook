@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Sign in with Facebook</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <h1 class="header__text">Sign in with Facebook Project</h1>
-        </header>
+      <header class="header">
+        <h1 class="header__text">Sign in with Facebook Project</h1>
+      </header>
 
-        <!-- The JS SDK Login Button -->
+      <!-- The JS SDK Login Button -->
 
-        <!-- this is original login button -->
-        <!-- <fb:login-button scope="public_profile,email" onlogin="GetProfile();">
+      <!-- this is original login button -->
+      <!-- <fb:login-button scope="public_profile,email" onlogin="GetProfile();">
         </fb:login-button> -->
 
-        <!-- This is style login button -->
-        <div class="fb-login-button" scope="public_profile,email" onlogin="GetProfile();" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+      <!-- This is style login button -->
+      <div
+        class="fb-login-button"
+        scope="public_profile,email"
+        onlogin="GetProfile();"
+        data-width=""
+        data-size="large"
+        data-button-type="login_with"
+        data-layout="default"
+        data-auto-logout-link="false"
+        data-use-continue-as="false"
+      ></div>
 
-        <div id="profile">
-          <img id="profile__image" src="./placeholder.jpg" alt="user image">
-          <h3 id="profile__name">Name</h3>
-          <p id="profile__email">E-mail</p>
-          <button id="signout-button" onclick="logout()">Log out</button>
-        </div>
-        
-    </div>    
-    
- <!-- Load the JS SDK asynchronously -->
-    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=178096127280582&autoLogAppEvents=1" nonce="c8W2wmWC"></script>
+      <div id="profile">
+        <img id="profile__image" src="./placeholder.jpg" alt="user image" />
+        <h3 id="profile__name">Name</h3>
+        <p id="profile__email">E-mail</p>
+        <button id="signout-button" onclick="logout()">Log out</button>
+      </div>
+    </div>
+
+    <!-- Load the JS SDK asynchronously -->
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js"
+    ></script>
+    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=178096127280582&autoLogAppEvents=1" nonce="c8W2wmWC"></script> -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
