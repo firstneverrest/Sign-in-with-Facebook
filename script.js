@@ -32,7 +32,7 @@ function testAPI() {
 
 window.fbAsyncInit = function () {
   FB.init({
-    appId: '1251308928608500',
+    appId: '[YOUR_APP_ID]',
     cookie: true, // Enable cookies to allow the server to access the session.
     xfbml: true, // Parse social plugins on this webpage.
     version: 'v10.0', // Use this Graph API version for this call.
